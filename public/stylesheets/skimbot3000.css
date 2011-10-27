@@ -29,3 +29,11 @@ a {
     text-decoration: none;
     color: #FFFFFF;
 }
+
+#skimbot {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: -1;
+    height: 30em;
+}

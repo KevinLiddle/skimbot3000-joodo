@@ -7,4 +7,5 @@
   (include-js "/javascript/skimbot3000.js")]
  [:body
   (eval (:template-body joodo.views/*view-context*))
+  [:img {:src "/images/skimbot.png" :alt "Skimbot3000" :id "skimbot"}]
 ]]
