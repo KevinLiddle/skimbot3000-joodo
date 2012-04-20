@@ -26,4 +26,12 @@
       (should= 200 (:status response))
       (should= "wrong" @rendered-template)))
 
+  (it "renders 404 when trying to mess with the question id"
+    (let [response (do-get (format "/question/345678/answer/345678"))]
+      (should= 404 (:status response))))
+
+  (it "renders 404 when trying to mess with question id in question url"
+    (let [response (do-get (format "/question/234567890"))]
+      (should= 404 (:status response))))
+
   )
